@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Yolk Eggs | Premium Restaurant-Quality Eggs</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      .hero-pattern {
+        background-image: radial-gradient(
+          circle,
+          rgba(255, 215, 0, 0.1) 1px,
+          transparent 1px
+        );
+        background-size: 20px 20px;
+      }
+      .egg-gradient {
+        background: linear-gradient(135deg, #f9d423 0%, #f83600 100%);
+      }
+      .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-amber-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <i data-feather="egg" class="text-amber-600 w-8 h-8"></i>
+            <span class="ml-2 text-xl font-bold text-amber-800"
+              >Golden Yolk</span
+            >
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="text-amber-900 hover:text-amber-600">Home</a>
+            <a href="#menu" class="text-amber-900 hover:text-amber-600"
+              >Our Eggs</a
+            >
+            <a href="#about" class="text-amber-900 hover:text-amber-600"
+              >About</a
+            >
+            <a href="#contact" class="text-amber-900 hover:text-amber-600"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden focus:outline-none">
+            <i data-feather="menu" class="w-6 h-6 text-amber-800"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern py-20">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-amber-900 leading-tight"
+          >
+            Restaurant-Quality Eggs<br /><span class="text-amber-600"
+              >Delivered to Your Door</span
+            >
+          </h1>
+          <p class="text-amber-800 mt-4 text-lg">
+            Farm-fresh, organic eggs that will elevate your cooking to gourmet
+            levels.
+          </p>
+          <div class="mt-8">
+            <a
+              href="#menu"
+              class="egg-gradient text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300"
+              >Explore Our Eggs</a
+            >
+          </div>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <img
+            src="http://static.photos/food/640x360/12"
+            alt="Delicious eggs"
+            class="rounded-lg shadow-xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Egg Types Section -->
+    <section id="menu" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-amber-900">
+            Our Premium Egg Selection
+          </h2>
+          <p class="text-amber-700 mt-4 max-w-2xl mx-auto">
+            Each variety is carefully selected for its unique flavor profile and
+            culinary potential.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Organic Free-Range -->
+          <div
+            class="menu-card bg-white rounded-xl p-6 shadow-md transition duration-300 border border-amber-100"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-100 p-4 rounded-full">
+                <i data-feather="sun" class="w-8 h-8 text-amber-600"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-center text-amber-900">
+              Organic Free-Range
+            </h3>
+            <p class="text-amber-700 mt-3 text-center">
+              From happy hens that roam freely in pesticide-free pastures.
+            </p>
+            <div class="mt-6 text-center">
+              <span class="text-amber-900 font-bold text-lg">$6.99/dozen</span>
+            </div>
+          </div>
+
+          <!-- Heritage Breed -->
+          <div
+            class="menu-card bg-white rounded-xl p-6 shadow-md transition duration-300 border border-amber-100"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-100 p-4 rounded-full">
+                <i data-feather="feather" class="w-8 h-8 text-amber-600"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-center text-amber-900">
+              Heritage Breed
+            </h3>
+            <p class="text-amber-700 mt-3 text-center">
+              Rare breeds with rich yolks and exceptional flavor profiles.
+            </p>
+            <div class="mt-6 text-center">
+              <span class="text-amber-900 font-bold text-lg">$8.99/dozen</span>
+            </div>
+          </div>
+
+          <!-- Omega-3 Enriched -->
+          <div
+            class="menu-card bg-white rounded-xl p-6 shadow-md transition duration-300 border border-amber-100"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-100 p-4 rounded-full">
+                <i data-feather="heart" class="w-8 h-8 text-amber-600"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-center text-amber-900">
+              Omega-3 Enriched
+            </h3>
+            <p class="text-amber-700 mt-3 text-center">
+              Nutrition-packed eggs from hens fed a special flaxseed diet.
+            </p>
+            <div class="mt-6 text-center">
+              <span class="text-amber-900 font-bold text-lg">$7.49/dozen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-amber-100">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+            <img
+              src="http://static.photos/agriculture/640x360/8"
+              alt="Our farm"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+          <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+            <h2 class="text-3xl font-bold text-amber-900 mb-6">Our Story</h2>
+            <p class="text-amber-800 mb-4">
+              Founded in 2010, Golden Yolk began with a simple mission: to
+              provide chefs and home cooks alike with eggs that make a real
+              difference in the kitchen.
+            </p>
+            <p class="text-amber-800 mb-4">
+              We partner with small family farms that prioritize animal welfare
+              and sustainable practices. Each egg is hand-graded and packaged
+              with care.
+            </p>
+            <p class="text-amber-800">
+              What sets our eggs apart? The deep golden yolks, firm whites, and
+              rich flavor that professional kitchens demand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold text-amber-900">What Chefs Say</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-amber-50 p-6 rounded-lg shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <div class="flex space-x-1 text-amber-600">
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <p class="text-amber-800 italic mb-4">
+              "Golden Yolk eggs are the only ones we use in our Michelin-starred
+              kitchen. The quality is consistently exceptional."
+            </p>
+            <p class="text-amber-900 font-semibold">- Chef Marco, Le Ciel</p>
+          </div>
+          <div
+            class="bg-amber-50 p-6 rounded-lg shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-4">
+              <div class="flex space-x-1 text-amber-600">
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <p class="text-amber-800 italic mb-4">
+              "The heritage breed eggs make the most incredible pasta carbonara.
+              Customers can taste the difference."
+            </p>
+            <p class="text-amber-900 font-semibold">
+              - Chef Elena, Trattoria Roma
+            </p>
+          </div>
+          <div
+            class="bg-amber-50 p-6 rounded-lg shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="flex space-x-1 text-amber-600">
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+                <i data-feather="star" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <p class="text-amber-800 italic mb-4">
+              "As a pastry chef, I rely on the consistency of Golden Yolk eggs
+              for my soufflés and custards. Never had a bad batch."
+            </p>
+            <p class="text-amber-900 font-semibold">
+              - Chef Antoine, Patisserie Belle
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-amber-900 text-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl font-bold">Order Your Eggs Today</h2>
+          <p class="text-amber-200 mt-4 max-w-2xl mx-auto">
+            For restaurants, cafes, or home delivery
+          </p>
+        </div>
+        <div class="max-w-2xl mx-auto">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-amber-100"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="mt-1 block w-full rounded-md bg-amber-800 border-amber-700 text-white focus:ring-amber-500 focus:border-amber-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-amber-100"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="mt-1 block w-full rounded-md bg-amber-800 border-amber-700 text-white focus:ring-amber-500 focus:border-amber-500"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-amber-100"
+                >Your Order Details</label
+              >
+              <textarea
+                id="message"
+                rows="4"
+                class="mt-1 block w-full rounded-md bg-amber-800 border-amber-700 text-white focus:ring-amber-500 focus:border-amber-500"
+              ></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                class="egg-gradient text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition duration-300"
+              >
+                Submit Order
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-950 text-amber-200 py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <i data-feather="egg" class="text-amber-400 w-6 h-6"></i>
+              <span class="ml-2 text-lg font-bold text-amber-400"
+                >Golden Yolk</span
+              >
+            </div>
+            <p class="text-sm">Premium eggs for chefs and food lovers.</p>
+          </div>
+          <div>
+            <h3 class="text-amber-400 font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#home" class="hover:text-amber-400">Home</a></li>
+              <li><a href="#menu" class="hover:text-amber-400">Our Eggs</a></li>
+              <li><a href="#about" class="hover:text-amber-400">About</a></li>
+              <li><a href="#contact" class="hover:text-amber-400">Order</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-amber-400 font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i data-feather="phone" class="w-4 h-4 mr-2"></i>
+                <span>(123) 456-7890</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="mail" class="w-4 h-4 mr-2"></i>
+                <span>orders@goldenyolk.com</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                <span>123 Farm Road, Countryside</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-amber-400 font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-amber-400"
+                ><i data-feather="instagram" class="w-5 h-5"></i
+              ></a>
+              <a href="#" class="hover:text-amber-400"
+                ><i data-feather="facebook" class="w-5 h-5"></i
+              ></a>
+              <a href="#" class="hover:text-amber-400"
+                ><i data-feather="twitter" class="w-5 h-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-amber-800 mt-8 pt-8 text-sm text-center">
+          <p>&copy; 2025 Golden Yolk by Bilyan Garbev. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init();
+      feather.replace();
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
